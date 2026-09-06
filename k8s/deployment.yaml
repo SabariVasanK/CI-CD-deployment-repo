@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cont1
-          image: 910230630650.dkr.ecr.us-east-1.amazonaws.com/sabari-cicd
+          image: 910230630650.dkr.ecr.us-east-1.amazonaws.com/sabari-cicd:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
