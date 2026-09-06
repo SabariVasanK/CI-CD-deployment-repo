@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sabari-alpha-svc
+  labels:
+    app: sabari-alpha
+spec:
+  type: LoadBalancer
+  selector:
+    app: sabari-alpha
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
